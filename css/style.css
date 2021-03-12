@@ -1,0 +1,79 @@
+/* defautl */
+*{margin: 0; padding: 0;}
+*,*::before, *::after{box-sizing: border-box;}
+p{margin-bottom: 0;}
+a{color: black;}
+a:hover{text-decoration: none;}
+ul{list-style: none;}
+body{font-family: "Roboto-Regular"; font-size: 14px;color:#000000;line-height: 16.41px;}
+h1,h2,h3,h4,h5,h6{margin-bottom: 0;line-height: 0}
+input,input:focus,button,button:focus{outline: none;outline-style: none;border: 0px;}
+/*fonts*/
+@font-face {
+	font-family:Roboto-Regular;
+	src:url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+	url('./fonts/Roboto/Roboto-Regular.eot#iefix') format('embedded-opentype'),
+	url('./fonts/Roboto/Roboto-Regular.woff') format('woff');
+	font-weight:normal;
+	font-style:normal;
+}
+
+/*default properties*/
+
+:root{
+	/*--color-font:;*/
+	--color-gray: #EBECF5;
+	--buttom-color: #3C79F3;
+	--color-main: #FFFFFF; 
+}
+
+/*default class*/
+body{background: var(--color-gray)}
+body header#header,body footer#footer{background: var(--color-main)}
+body header#header{padding:10px 0;}
+body button{background: var(--buttom-color)}
+/*login*/
+
+/**/
+header#header .logo-web>a{display: inline-block;}
+footer#footer{margin-top:20px;}
+footer#footer.position{position: fixed;bottom: 0;width: 100%;z-index: 1}
+footer#footer p{font-size: 16px;line-height: 19px;padding: 15px 0;text-align: center}
+/*main*/
+main#wrap-main .wrap-form-login{width: 480px;max-width: 100%;margin:0 auto;background: var(--color-main);border-radius: 10px;margin-top:76px;padding:47px 42px;}
+main#wrap-main .wrap-form-login h2{font-size: 25px;line-height: 29px;text-transform: uppercase;text-align: center;padding: 26px 0}
+main#wrap-main .wrap-form-login label{font-size: 16px;line-height: 19px;margin-bottom: 15px}
+main#wrap-main .wrap-form-login input{display: block;background: #f7f7f7;width: 100%;line-height: 1;padding:14px 10px;margin-bottom: 15px}
+main#wrap-main .wrap-form-login button{color: #fff;padding: 14px;width: 285px;max-width: 100%;border-radius: 3px;margin-top: 22px;}
+main#wrap-main .wrap-form-login .control-button{text-align: center;}
+
+
+/*page index*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
