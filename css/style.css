@@ -36,7 +36,8 @@ body button{background: var(--buttom-color)}
 
 /**/
 header#header .logo-web>a{display: inline-block;}
-footer#footer{position: absolute;bottom: 0;width: 100%;z-index: 1}
+footer#footer{margin-top:20px;}
+footer#footer.position{position: fixed;bottom: 0;width: 100%;z-index: 1}
 footer#footer p{font-size: 16px;line-height: 19px;padding: 15px 0;text-align: center}
 /*main*/
 main#wrap-main .wrap-form-login{width: 480px;max-width: 100%;margin:0 auto;background: var(--color-main);border-radius: 10px;margin-top:76px;padding:47px 42px;}
@@ -47,7 +48,7 @@ main#wrap-main .wrap-form-login button{color: #fff;padding: 14px;width: 285px;ma
 main#wrap-main .wrap-form-login .control-button{text-align: center;}
 
 
-
+/*page index*/
 
 
 
