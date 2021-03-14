@@ -20,5 +20,16 @@ $(document).ready(function(){
 	setFooter();
 	$(window).resize(function(){
 		setFooter();
+	});
+
+	$('.icon-bar').click(function(){
+		// $('.tab-control').animate(
+		// 	{
+		// 		width: '76px',
+		// 	});
+		$('h1').animate({ width:'toggle'},'fast');
+		$('.text-name').animate({ width:'toggle'},'fast');
+		$('.tab-control').toggleClass('active');
 	})
+	
  })

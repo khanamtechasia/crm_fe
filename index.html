@@ -19,8 +19,7 @@
         </div>
     </header>
     <main id="wrap-main">
-        <div class="wrapper">
-            <div class="tab-control">
+            <aside class="tab-control" id="tab-controls">
                 <div class="logo-web">
                     <a href="index.html">
                         <h1><img src="./images/logo-TechAsia.png"></h1>
@@ -45,101 +44,120 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="layout-search set-layout">
-                <form class="" action="">
-                    <div class="form-controll">
-                        <h2>検索search</h2>
-                    </div>
-                    <div class="form-controll form-2-item">
-                        <div class="form-controll-item">
-                            <label>名前name</label>
-                            <input type="name" name="name">
+            </aside>
+        <div class="wrapper">
+            <div class="wrap-form">
+                <div class="layout-search set-layout">
+                    <form class="" action="">
+                        <div class="form-controll">
+                            <h2>検索search</h2>
                         </div>
-                        <div class="form-controll-item">
-                            <label>Twitterアカウント名twitter account name</label>
-                            <input type="name" name="twitter">
+                        <div class="form-controll form-2-item">
+                            <div class="form-controll-item">
+                                <label>名前name</label>
+                                <input type="name" name="name">
+                            </div>
+                            <div class="form-controll-item">
+                                <label>Twitterアカウント名twitter account name</label>
+                                <input type="name" name="twitter">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-controll form-3-item">
-                        <div class="form-controll-item">
-                            <label>企業ステータス status</label>
-                            <input type="name" name="status">
+                        <div class="form-controll form-3-item">
+                            <div class="form-controll-item">
+                                <label>企業ステータス status</label>
+                                <div class="select-form">
+                                    <select name="status">
+                                        <option></option>
+                                        <option>1</option>
+                                        <option>1</option>
+                                        <option>1</option>
+                                    </select>
+                                    <span class="icon-arrow"><i class="fal fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-controll-item">
+                                <label>セールスステータス sales_status</label>
+                                <div class="select-form">
+                                    <select name="sales_status">
+                                        <option></option>
+                                        <option>1</option>
+                                        <option>1</option>
+                                        <option>1</option>
+                                    </select>
+                                    <span class="icon-arrow"><i class="fal fa-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-controll-item">
+                                <label>都道府県prefecture</label>
+                                <input type="name" name="prefecture">
+                            </div>
                         </div>
-                        <div class="form-controll-item">
-                            <label>セールスステータス sales_status</label>
-                            <input type="name" name="sales_status">
+                        <div class="form-controll control-button control-index">
+                            <div></div>
+                            <button type="submit">検索</button>
+                            <div></div>
                         </div>
-                        <div class="form-controll-item">
-                            <label>都道府県prefecture</label>
-                            <input type="name" name="prefecture">
-                        </div>
-                    </div>
-                    <div class="form-controll control-button">
-                        <div></div>
-                        <button type="submit">検索</button>
-                        <div></div>
-                    </div>
-                </form>
-            </div>
-            <div class="list-product set-layout">
-                <div class="form-controll">
-                    <div></div>
-                    <label>New</label>
-                    <div></div>
+                    </form>
                 </div>
-                <table id="customers">
-                    <tr>
-                        <th>Bland name</th>
-                        <th>Bland category</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td>Bland name</td>
-                        <td>Bland category</td>
-                        <td><a href="" title="">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>Bland name</td>
-                        <td>Bland category</td>
-                        <td><a href="" title="">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>Bland name</td>
-                        <td>Bland category</td>
-                        <td><a href="" title="">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>Bland name</td>
-                        <td>Bland category</td>
-                        <td><a href="" title="">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>Bland name</td>
-                        <td>Bland category</td>
-                        <td><a href="" title="">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>Bland name</td>
-                        <td>Bland category</td>
-                        <td><a href="" title="">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>Bland name</td>
-                        <td>Bland category</td>
-                        <td><a href="" title="">Details</a></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="pagilation">
-            	<ul>
-            		<li><a href="" title="" class="active">1</a></li>
-            		<li><a href="" title="" class="">2</a></li>
-            		<li><a href="" title="" class="">3</a></li>
-            		<li><a href="" title="" class="">4</a></li>
-            		<li><a href="" title="" class="">5</a></li>
-            		<li><a href="" title="" class="">>></a></li>
-            	</ul>
+                <div class="list-product set-layout">
+                    <div class="form-controll">
+                        <div></div>
+                        <label>New</label>
+                        <div></div>
+                    </div>
+                    <table id="customers">
+                        <tr>
+                            <th>Bland name</th>
+                            <th>Bland category</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Bland name</td>
+                            <td>Bland category</td>
+                            <td><a href="" title="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bland name</td>
+                            <td>Bland category</td>
+                            <td><a href="" title="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bland name</td>
+                            <td>Bland category</td>
+                            <td><a href="" title="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bland name</td>
+                            <td>Bland category</td>
+                            <td><a href="" title="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bland name</td>
+                            <td>Bland category</td>
+                            <td><a href="" title="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bland name</td>
+                            <td>Bland category</td>
+                            <td><a href="" title="">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bland name</td>
+                            <td>Bland category</td>
+                            <td><a href="" title="">Details</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pagilation">
+                	<ul>
+                		<li><a href="" title="" class="active">1</a></li>
+                		<li><a href="" title="" class="">2</a></li>
+                		<li><a href="" title="" class="">3</a></li>
+                		<li><a href="" title="" class="">4</a></li>
+                		<li><a href="" title="" class="">5</a></li>
+                		<li><a href="" title="" class="">>></a></li>
+                	</ul>
+                </div>
             </div>
         </div>
     </main>
