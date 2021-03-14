@@ -75,6 +75,12 @@ body main#wrap-main .wrapper-form .form-group[class*=col-md-10]{flex: 0 0 81.111
 header#header,body footer#footer{background: var(--color-main)}
 header#header{padding:10px 0;}
 body .logo-web>a{display: inline-block;}
+
+/**/
+header#header .logo-web>a{display: inline-block;}
+footer#footer{margin-top:20px;}
+footer#footer.position{position: fixed;bottom: 0;width: 100%;z-index: 1}
+footer#footer p{font-size: 16px;line-height: 19px;padding: 15px 0;text-align: center}
 /*main*/
 main#wrap-main>.wrapper-login{padding-top:76px;}
 main#wrap-main .wrap-form-login{width: 480px;max-width: 100%;margin:0 auto;background: var(--color-main);border-radius: 10px;padding:47px 42px;}
@@ -168,6 +174,26 @@ main#wrap-main .back-page a:hover{background: #6a6a6a;color: #fff}
 main#wrap-main .details-history .form-group p.name-details {font-family: Roboto-Regular;font-weight:400;}
 main#wrap-main .icon-datePicker{position: absolute;right: 21px}
 main#wrap-main .icon-datePicker i{font-size: 18px}
+
+/*page index*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> b7219ce3e2795e64ffa87ec1e95603dd12a4c8ed
 
 
 
