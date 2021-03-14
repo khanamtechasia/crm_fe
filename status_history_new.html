@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>TechAsia - status_history</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome/all.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body id="aaaa">
+	<header id="header">
+		<div class="container">
+			<div class="logo-web">
+				<a href="index.html"><h1><img src="./images/logo-TechAsia.png"></h1></a>
+			</div>
+		</div>
+	</header>
+
+	<main id="wrap-main">
+		<div class="wrapper">
+			<div class="wrap-page-new set-layout">
+				<form>
+					<div class="wrapper-form">
+						<div class="form-group-item form-row">
+							<div class="form-controll form-group col-md-2">
+								<label>日時 datetime</label>
+							</div>
+							<div class="form-controll form-group col-md-10">
+								<!-- <input type="text" name="" id='datetimepicker4'> -->
+								<input type="text" class="form-control" name="datefilter" value="">
+								<span class="icon-datePicker"><i class="fal fa-clock"></i></span>
+							</div>
+						</div>
+						<div class="form-group-item form-row">
+							<div class="form-controll form-group col-md-2">
+								<label>タイトル title</label>
+							</div>
+							<div class="form-controll form-group col-md-10">
+								<input type="email" name="email" id="email">
+							</div>
+						</div>
+						<div class="form-group-item form-row">
+							<div class="form-controll form-group col-md-2">
+								<label>現在のステータス</label>
+							</div>
+							<div class="form-controll form-group col-md-10">
+								<div class="select-form">
+                                    <select name="status">
+                                        <option></option>
+                                        <option>1</option>
+                                        <option>1</option>
+                                        <option>1</option>
+                                    </select>
+                                    <span class="icon-arrow"><i class="fal fa-chevron-down"></i></span>
+                                </div>
+							</div>
+						</div>
+						<div class="form-group-item form-row">
+							<div class="form-controll form-group col-md-2">
+								<label>変更後のステータス</label>
+							</div>
+							<div class="form-controll form-group col-md-10">
+								<input type="email" name="email" id="email">
+							</div>
+						</div>
+						<div class="form-group-item control-submit">
+							<div class="form-controll form-group ">
+								<button type="submit" class="color-gray">戻るBack</button>
+							</div>
+							<div class="form-controll form-group control-button">
+								<button type="submit">保存Save</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer id="footer">
+		<div class="container">
+			<p>© 2021 Techasiavn |  All Rights Reserved.</p>
+		</div>
+	</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- <script type="text/javascript" src="js/require.min.1561713694.js"></script> -->
+<script type="text/javascript" src="./js/dateRangerPicker.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

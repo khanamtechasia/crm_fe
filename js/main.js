@@ -3,7 +3,7 @@ $(document).ready(function(){
 	function setFooter(){
 		let heightDevice = $(window).height();
 		let heightHeader= $('#header').outerHeight();
-		let heightBody = $('#wrap-main').outerHeight();
+		let heightBody= $('#wrap-main').outerHeight();
 		let heightFooter= $('#footer').outerHeight();
 		let sumBody = heightHeader + heightBody + heightFooter;
 		if (sumBody < heightDevice) {
@@ -12,17 +12,20 @@ $(document).ready(function(){
 		}else{
 			$('footer').removeClass('position');
 		}
-		console.log(sumBody);
-		console.log(heightDevice);
 	}
-
+	setFooter();
 	$(window).resize(function(){
-		// let scroll = document.documentElement.clientHeight;
 		setFooter();
+	});
+
+	$('.icon-bar').click(function(){
+		// $('.tab-control').animate(
+		// 	{
+		// 		width: '76px',
+		// 	});
+		$('h1').animate({ width:'toggle'},'fast');
+		$('.text-name').animate({ width:'toggle'},'fast');
+		$('.tab-control').toggleClass('active');
 	})
-
-
-
-
-
+	
  })
