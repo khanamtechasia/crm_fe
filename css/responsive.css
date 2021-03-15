@@ -1,3 +1,47 @@
-@media (min-width: 1200px){
-.container {max-width: 1170px;}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+    main#wrap-main .tab-control {
+	    width: 274px;
+	}
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 520px;
+    }
+     main#wrap-main .tab-control {
+	    width: 224px;
+	}
+    .wrapper.active{max-width: 700px;}
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 750px;
+    }
+     .wrapper.active{max-width: 850px;}
+}
+
+@media (min-width: 1200px) {
+	main#wrap-main .tab-control {
+	    width: 230px;
+	}
+	.wrapper {
+        max-width: 850px;
+    }
+    .wrapper.active{max-width: 1000px;}
+}
+@media (min-width: 1800px) {
+    .wrapper {
+        max-width: 1200px;
+    }
+     .wrapper.active{max-width: 1400px;}
 }
