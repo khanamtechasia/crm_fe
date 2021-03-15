@@ -188,7 +188,7 @@ main#wrap-main .icon-datePicker i{font-size: 18px}
 main.page-index .form-row {margin-right: -15px;margin-left: -15px;}
 main.page-index .form-row>[class*=col-] {padding-right: 15px;padding-left: 15px;}
 main#wrap-main.page-index button {margin-top: 0}
-main#wrap-main .form-control {margin:0;padding:0;height: auto;line-height: 1;font-size: 14px;border:none;}
+main#wrap-main .form-control {margin:0;height: auto;line-height: 1;font-size: 14px;border:none;}
 main#wrap-main input.form-control,main#wrap-main select.form-control{border:1px solid #E3E3E3}
 
 
