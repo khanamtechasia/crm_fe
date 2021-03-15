@@ -18,7 +18,7 @@
             <div class="logo-web"></div>
         </div>
     </header>
-    <main id="wrap-main">
+    <main id="wrap-main" class="page-index">
             <aside class="tab-control" id="tab-controls">
                 <div class="logo-web">
                     <a href="index.html">
@@ -49,73 +49,68 @@
             <div class="wrap-form">
                 <div class="layout-search set-layout">
                     <form class="" action="">
-                        <div class="form-controll">
+                        
                             <h2>検索search</h2>
-                        </div>
-                        <div class="form-controll form-2-item">
-                            <div class="form-controll-item">
-                                <label>名前name</label>
-                                <input type="name" name="name">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="">名前name</label>
+                                <input class="form-control" type="name" name="name">
                             </div>
-                            <div class="form-controll-item">
-                                <label>Twitterアカウント名twitter account name</label>
-                                <input type="name" name="twitter">
+                            <div class="form-group col-md-6">
+                                <label for="">Twitterアカウント名twitter account name</label>
+                                <input class="form-control" type="name" name="twitter">
                             </div>
                         </div>
-                        <div class="form-controll form-3-item">
-                            <div class="form-controll-item">
-                                <label>企業ステータス status</label>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="">企業ステータス status</label>
                                 <div class="select-form">
-                                    <select name="status">
+                                    <select class="form-control" name="status">
                                         <option></option>
                                         <option>1</option>
                                         <option>1</option>
                                         <option>1</option>
                                     </select>
-                                    <span class="icon-arrow"><i class="fal fa-chevron-down"></i></span>
                                 </div>
                             </div>
-                            <div class="form-controll-item">
-                                <label>セールスステータス sales_status</label>
+                            <div class="form-group col-md-4">
+                                <label for="">セールスステータス sales_status</label>
                                 <div class="select-form">
-                                    <select name="sales_status">
+                                    <select class="form-control" name="sales_status">
                                         <option></option>
                                         <option>1</option>
                                         <option>1</option>
                                         <option>1</option>
                                     </select>
-                                    <span class="icon-arrow"><i class="fal fa-chevron-down"></i></span>
                                 </div>
                             </div>
-                            <div class="form-controll-item">
-                                <label>都道府県prefecture</label>
-                                <input type="name" name="prefecture">
+                            <div class="form-group col-md-4">
+                                <label for="">都道府県prefecture</label>
+                                <input class="form-control" type="name" name="prefecture">
                             </div>
                         </div>
-                        <div class="form-controll control-button control-index">
-                            <div></div>
-                            <button type="submit">検索</button>
-                            <div></div>
+                        <div class="form-row control-button control-index">
+                            <div class="form-group col-md-4"></div>
+                            <div class="form-group col-md-4"><button type="submit">検索</button></div>
+                            <div  class="form-group col-md-4"></div>
                         </div>
                     </form>
                 </div>
                 <div class="list-product set-layout">
-                    <div class="form-controll">
-                        <div></div>
-                        <label><a href="" title="" class="button">New</a></label>
-                        <div></div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4"></div>
+                        <div class="form-group col-md-4"><a href="" title="" class="button">New</a></div>
+                        <div class="form-group col-md-4"></div>
                     </div>
-                    <table id="customers">
-                        <tr>
-                            <th>Bland name</th>
-                            <th>Bland category</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td>Bland name</td>
-                            <td>Bland category</td>
-                            <td><a href="" title="">Details</a></td>
-                        </tr>
+                    <table id="customers" class="table-index">
+                        <thead>
+                            <tr>
+                                <th>Bland name</th>
+                                <th>Bland category</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>Bland name</td>
                             <td>Bland category</td>
@@ -146,6 +141,12 @@
                             <td>Bland category</td>
                             <td><a href="" title="">Details</a></td>
                         </tr>
+                        <tr>
+                            <td>Bland name</td>
+                            <td>Bland category</td>
+                            <td><a href="" title="">Details</a></td>
+                        </tr>
+                    </tbody>
                     </table>
                 </div>
                 <div class="pagilation">
