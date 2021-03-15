@@ -26,6 +26,10 @@ $(document).ready(function(){
 		$('h1').animate({ width:'toggle'},'fast');
 		$('.text-name').animate({ width:'toggle'},'fast');
 		$('.tab-control').toggleClass('active');
+		$('.wrapper').toggleClass('active');
+		// $('.wrapper').animate({
+		// 	width: '1398px'
+		// })
 	})
 	
  })
