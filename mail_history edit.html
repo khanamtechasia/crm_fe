@@ -1,100 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>TechAsia - Edit mail_history</title>
-<link rel="stylesheet" href="./css/bootstrap4_3_1.min.css">
-<link rel="stylesheet" type="text/css" href="./css/daterangepicker.css" />
-<link rel="stylesheet" type="text/css" href="css/font-awesome/all.css">
-<link rel="stylesheet" type="text/css" href="./css/bootstrap-datetimepicker.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/responsive.css">
-</head>
-<body id="aaaa">
-	<header id="header">
-		<div class="container">
-			<div class="logo-web">
-				<a href="index.html"><h1><img src="./images/logo-TechAsia.png"></h1></a>
-			</div>
-		</div>
-	</header>
 
-	<main id="wrap-main">
-		<div class="wrapper">
-			<div class="wrap-page-new set-layout">
-				<form>
-					<div class="wrapper-form">
-						<div class="form-group-item form-row">
-							<div class="form-controll form-group col-md-2">
-								<label>日時 datetime</label>
-							</div>
-							<div class="form-controll form-group col-md-10">
-								<!-- <input type="text" name="" id='datetimepicker4'> -->
-								<input type="text" class="form-control" name="datefilter" value="">
-								<span class="icon-datePicker"><i class="fal fa-clock"></i></span>
-							</div>
-						</div>
-						<div class="form-group-item form-row">
-							<div class="form-controll form-group col-md-2">
-								<label>タイトル title</label>
-							</div>
-							<div class="form-controll form-group col-md-10">
-								<input type="email" name="email" id="email">
-							</div>
-						</div>
-						<div class="form-group-item form-row">
-							<div class="form-controll form-group col-md-2">
-								<label>カテゴリーcategory</label>
-							</div>
-							<div class="form-controll form-group col-md-10">
-								<div class="select-form">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TechAsia - Edit mails-history</title>
+    <link rel="stylesheet" href="./css/bootstrap4_3_1.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/all.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body id="aaaa">
+    <header id="header">
+        <div class="container">
+            <div class="logo-web">
+                <a href="index.html">
+                    <h1><img src="./images/logo-TechAsia.png"></h1>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main id="wrap-main">
+        <div class="wrapper">
+            <div class="wrap-page-new set-layout">
+                <form>
+                    <div class="wrapper-form">
+                        <div class="form-row">
+                            <label class="col-md-2 col-form-label">日時 datetime</label>
+                            <div class="form-group col-md-10">
+                                <input type="text" class="form-control" name="datefilter" value="">
+                                <span class="icon-datePicker"><i class="fal fa-clock"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="col-md-2 col-form-label">タイトル title</label>
+                            <div class="form-group col-md-10">
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="col-md-2 col-form-label">カテゴリーcategory</label>
+                            <div class="form-group col-md-10">
+                                <div class="select-form">
                                     <select name="status">
                                         <option></option>
                                         <option>1</option>
                                         <option>1</option>
                                         <option>1</option>
                                     </select>
-                                    
                                 </div>
-							</div>
-						</div>
-						<div class="form-group-item form-row">
-							<div class="form-controll form-group col-md-2">
-								<label>詳細 details</label>
-							</div>
-							<div class="form-controll form-group col-md-10">
-								<textarea rows="7"></textarea>
-							</div>
-						</div>
-						<div class="form-group-item form-row">
-							<div class="form-controll form-group col-md-2">
-								<label>URL</label>
-							</div>
-							<div class="form-controll form-group col-md-10">
-								<input type="email" name="email" id="email">
-							</div>
-						</div>
-						<div class="form-group-item control-submit">
-							<div class="form-controll form-group ">
-								<button type="submit" class="color-gray">戻るBack</button>
-							</div>
-							<div class="form-controll form-group control-button">
-								<button type="submit">保存Save</button>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</main>
-
-	<footer id="footer">
-		<div class="container">
-			<p>© 2021 Techasiavn |  All Rights Reserved.</p>
-		</div>
-	</footer>
+                            </div>
+                        </div>
+                        <div class="form-row text-area">
+                            <label class=" col-md-2 col-form-label">詳細 details</label>
+                            <div class="form-group col-md-10">
+                                <textarea rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="col-md-2 col-form-label">URL</label>
+                            <div class="form-group col-md-10">
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="control-submit">
+                            <div class="form-group ">
+                                <button type="submit" class="btn bg-gray">戻るBack</button>
+                            </div>
+                            <div class="form-group control-button">
+                                <button type="submit">保存Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <p>© 2021 Techasiavn | All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 <script src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/moment.min.js"></script>
@@ -102,4 +92,5 @@
 <script type="text/javascript" src="./js/daterangepicker.min.js"></script>
 <script type="text/javascript" src="./js/dateRangerPicker.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
 </html>
