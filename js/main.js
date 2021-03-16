@@ -17,11 +17,10 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		setFooter();
 	});
-
 	$('.icon-bar').click(function(){
 		// $('.tab-control').animate(
 		// 	{
-		// 		width: '76px',
+		// 		width: width_W + '100px',
 		// 	});
 		$('h1').animate({ width:'toggle'},'fast');
 		$('.text-name').animate({ width:'toggle'},'fast');
