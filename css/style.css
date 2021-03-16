@@ -72,6 +72,7 @@ form .group-button button{width: 48%}
 button{height: 45px}
 .wrap-form-group .form-row{margin-bottom: 20px}
 main .wrap-form-group .form-row.row-name{margin-bottom: 0}
+input[type="password"]{font-family: auto}
 /*body*/
 body textarea{min-height: 126px}
 body input,body select,body textarea{display: block;width: 100%;line-height: 1;padding: 7.5px 15px;height: 35px!important;border: 1px solid #E3E3E3;border-radius: 3px;box-sizing: border-box; }
