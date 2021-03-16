@@ -81,10 +81,6 @@ body button{color: #fff;transition:.2s;border:1px solid var(--color-main-green);
 body main#wrap-main .form-group-item{margin-bottom: 20px}
 body main#wrap-main .wrapper-form{width: 900px;margin:0 auto;max-width: 100%;padding-top:9px;}
 body main#wrap-main .wrapper-form [class*=col]{display: flex;align-items: center;}
-body main#wrap-main .wrapper-form [class*=col-md-2]{flex: 0 0 18.888889%;max-width:18.888889% }
-body main#wrap-main .wrapper-form [class*=col-md-5]{flex: 0 0 44.444445%;max-width:44.444445% }
-body main#wrap-main .wrapper-form [class*=col-md-7]{flex: 0 0 55.555555%;max-width:55.555555% }
-body main#wrap-main .wrapper-form [class*=col-md-10]{flex: 0 0 81.111111%;max-width:81.111111% }
 /*header*/
 header#header,body footer#footer{background: var(--color-main)}
 header#header{padding:10px 0;}
