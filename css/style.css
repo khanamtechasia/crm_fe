@@ -1,15 +1,15 @@
 @font-face {
-	font-family:Roboto-Regular;
-	src:url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
-	url('./fonts/Roboto/Roboto-Regular.eot#iefix') format('embedded-opentype'),
-	url('./fonts/Roboto/Roboto-Regular.woff') format('woff');
+	font-family:Boku-Regular;
+	src:url('./fonts/boku/boku2r/Boku2-Regular.otf') format('truetype'),
+	url('./fonts/boku/boku2r/Boku2-Regular.eot#iefix') format('embedded-opentype'),
+	url('./fonts/boku/boku2r/Boku2-Regular.woff') format('woff');
 
 }
 @font-face {
-	font-family:Roboto-Bold;
-	src:url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
-	url('./fonts/Roboto/Roboto-Bold.eot#iefix') format('embedded-opentype'),
-	url('./fonts/Roboto/Roboto-Bold.woff') format('woff');
+	font-family:Boku-Bold;
+	src:url('./fonts/boku/boku2b/Boku2-Bold.otf') format('truetype'),
+	url('./fonts/boku/boku2b/Boku2-Bold.eot#iefix') format('embedded-opentype'),
+	url('./fonts/boku/boku2b/Boku2-Bold.woff') format('woff');
 }
 @font-face {
 	font-family:KozGo-Pr6N-Regular;
@@ -26,7 +26,8 @@
 	--color-border: #F6F6F6;
 	--padding-item-control: 9px 17px 9px 17px;
 	--margin-layout:30px;
-	--font-bold: "Roboto-Bold"
+	--font-bold: "Boku-Bold";
+	--font-rugular: "Boku-Regular";
 }
 /* defautl */
 *{margin: 0; padding: 0;}
@@ -35,7 +36,7 @@ p{margin-bottom: 0;}
 a{color: black;}
 a:hover{text-decoration: none;}
 ul{list-style: none;margin-bottom: 0}
-body{font-family: "Roboto-Regular"; font-size: 14px;color:#6A6A6A;line-height: 16.41px;}
+body{font-family: var(--font-rugular); font-size: 14px;color:#6A6A6A;line-height: 16.41px;}
 h1,h2,h3,h4,h5,h6{margin-bottom: 0; font-family: var(--font-bold)}
 h1{font-size: inherit;}
 img{object-fit: cover}
@@ -96,7 +97,7 @@ footer#footer p{font-size: 16px;line-height: 19px;padding: 15px 0;text-align: ce
 /*main*/
 main#wrap-main>.wrapper-login{padding-top:76px;}
 main#wrap-main .wrap-form-login{width: 480px;max-width: 100%;margin:0 auto;background: var(--color-main);border-radius: 10px;padding:47px 42px;}
-main#wrap-main .wrap-form-login h2{font-family:Roboto-Regular;font-weight: 400;  font-size: 25px;margin-bottom: 30px;text-transform: uppercase;text-align: center;padding: 26px 0}
+main#wrap-main .wrap-form-login h2{font-family:var(--font-rugular);font-weight: 400;  font-size: 25px;margin-bottom: 30px;text-transform: uppercase;text-align: center;padding: 26px 0}
 main#wrap-main .wrap-form-login label{font-size: 16px;margin-bottom: 15px}
 main#wrap-main .wrap-form-login input{background: #f7f7f7;padding:14px 10px;margin-bottom: 0px}
 main#wrap-main .wrap-form-login .control-button{text-align: center;}
@@ -117,7 +118,7 @@ main#wrap-main .tab-control{width: 274px;position: fixed;height: 100vh;left: 0;t
 main#wrap-main .tab-control .logo-web{border-right: 1px solid var(--color-border);padding:var(--padding-item-control);display: flex;align-items: center;justify-content: space-between;}
 main#wrap-main .item-control a{transition: .3s; display: flex;padding: 18px 23px;border-top: 1px solid var(--color-border)}
 main#wrap-main .item-control .text-name{display: flex;align-items: center;}
-main#wrap-main .item-control .text-name h3{font-size: 16px;color: #7b7b7b;margin-left: 17px;font-family:Roboto-Regular;}
+main#wrap-main .item-control .text-name h3{font-size: 16px;color: #7b7b7b;margin-left: 17px;font-family:var(--font-rugular);}
 main#wrap-main #tab-controls .icon-bar{cursor: pointer;}
 main#wrap-main #tab-controls.active .icon-bar{padding:13px 10px;}
 main#wrap-main #tab-controls.active{width: auto;-webkit-transform: translate(0, 0);
@@ -146,7 +147,7 @@ main#wrap-main .list-product #customers.table-index td,main#wrap-main .list-prod
 main#wrap-main .list-product #customers.table-index td:nth-child(2),main#wrap-main .list-product #customers.table-index th:nth-child(2){text-align: center;}
 main#wrap-main .list-product #customers td:last-child, main#wrap-main .list-product #customers th:last-child {width:80px;}
 main#wrap-main .list-product #customers thead tr, main#wrap-main .list-product #customers tr:nth-child(even){background: #FAFBFF}
-main#wrap-main .list-product #customers th{font-family: Roboto-Bold;color: #000}
+main#wrap-main .list-product #customers th{font-family: var(--font-bold);color: #000}
 main#wrap-main .list-product #customers tr th{height: 50px}
 /*main#wrap-main .list-product #customers tr th:nth-child(2),*/
 /*main#wrap-main .list-product #customers tr td:nth-child(2){text-align: center;}*/
@@ -164,7 +165,7 @@ main#wrap-main .pagilation ul li a.active{font-size: 16px;background: var(--colo
 /*page new*/
 main#wrap-main{padding-top:var(--margin-layout)}
 main#wrap-main .list-product .form-group h2{padding-left: 27px;color:#000;}
-main#wrap-main .wrap-page-new .form-control h3{color: #000;font-family: Roboto-Bold;font-size: 14px;font-weight: 700;margin:7.5px 0;}
+main#wrap-main .wrap-page-new .form-control h3{color: #000;font-family: var(--font-bold);font-size: 14px;font-weight: 700;margin:7.5px 0;}
 main#wrap-main .checkBox-form .form-group[class*=col]{display: block;}
 /*main#wrap-main .checkBox-form .form-group[class*=col-md-6]{display: flex;align-items: center;margin-bottom: 35px}*/
 main#wrap-main .control-submit{display: grid;grid-template-columns: 1fr 1fr;grid-gap: 45px;/*margin-bottom: 50px;*/margin-top: 54px}
@@ -173,13 +174,13 @@ main#wrap-main .control-submit .color-gray{background: #EDEDED;border-color: #ED
 main#wrap-main .control-submit .color-gray:hover{background: #bfbfbf;}
 main#wrap-main .checkBox-form .col-md-6:nth-child(even){padding-left: 25px}
 /*page-details*/
-main#wrap-main .form-control p.name-details{font-family: Roboto-Bold;font-weight: 700;color: #6a6a6a}
+main#wrap-main .form-control p.name-details{font-family: var(--font-bold);font-weight: 700;color: #6a6a6a}
 main#wrap-main .form-control p.name-details>a{color: #0368FF;text-decoration: revert;}
 main#wrap-main .edit-Page{text-align: right}
 main#wrap-main .edit-Page>a{color: var(--color-main-green);border:1px solid var(--color-main-green);width: 120px;transition: .3s;display: inline-block;padding: 8px 0;text-align: center;border-radius: 3px;}
 main#wrap-main .edit-Page>a:hover{background:var(--color-main-green);color:#fff; }
 main#wrap-main label[for*="inlineCheckbo_"]{margin-bottom: 20px}
-main#wrap-main h2.tab-new-title{font-size: 14px;margin-top:10px; font-family: Roboto-Bold;font-weight: 700;}
+main#wrap-main h2.tab-new-title{font-size: 14px;margin-top:10px; font-family: var(--font-bold);font-weight: 700;}
 main#wrap-main .list-product #customers tr td>a.arrow-next{border:none;width:32px;height:32px; padding: 0;}
 main#wrap-main .list-product #customers tr td>a.arrow-next:hover{background: inherit;}
 
@@ -188,7 +189,7 @@ main#wrap-main .control-submit.control-detail-page-delete{grid-template-columns:
 main#wrap-main .back-page{text-align: center;}
 main#wrap-main .back-page a{transition: .3s;display: inline-block;color: #6A6A6A;font-size: 16px;width: 178px;text-align: center;padding: 13.5px 0;border:1px solid #6A6A6A;border-radius: 3px}
 main#wrap-main .back-page a:hover{background: #6a6a6a;color: #fff}
-main#wrap-main .details-history .form-group p.name-details {font-family: Roboto-Regular;font-weight:400;}
+main#wrap-main .details-history .form-group p.name-details {font-family: var(--font-rugular);font-weight:400;}
 main#wrap-main .icon-datePicker{position: absolute;right: 21px}
 main#wrap-main .icon-datePicker i{font-size: 18px}
 
