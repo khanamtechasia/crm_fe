@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	let footer = document.getElementById('footer');
+	let widthDevice = $(window).width();
 	function setFooter(){
 		let heightDevice = $(window).height();
 		let heightHeader= $('#header').outerHeight();
@@ -17,11 +18,9 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		setFooter();
 	});
+			
+	console.log(widthDevice);
 	$('.icon-bar').click(function(){
-		// $('.tab-control').animate(
-		// 	{
-		// 		width: width_W + '100px',
-		// 	});
 		$('h1').animate({ width:'toggle'},'fast');
 		$('.text-name').animate({ width:'toggle'},'fast');
 		$('.tab-control').toggleClass('active');
