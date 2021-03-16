@@ -51,7 +51,7 @@ body .select-form select{-webkit-appearance: none;color: #666666;-moz-appearance
 
 /*login*/
 /*form*/
-input,button,button:focus,select,textarea{outline: none;outline-style: none;border: 0px;margin:0;}
+input,button,button:focus,select,textarea{outline: none;outline-style: none;border: 0px;margin:0;box-shadow:none!important;}
 button.bg-gray{background-color: #EDEDED}
 button.bg-gray:hover{background-color: #b3a8a8}
 button.bg-blue{background-color: #3C79F3; color: white}
@@ -62,12 +62,15 @@ form .form-row .form-group{margin-bottom: 0px}
 form .form-row.text-area{align-items: end}
 form .form-row.checkbox-group .custom-control{padding-left: 30px}
 form .form-row.checkbox-group .custom-checkbox{margin-bottom: 20px}
-h3.title-form{font-size: 14px; margin-bottom: 20px}
-.custom-control-label::before{top: -1px}
+form .form-row.checkbox-group .custom-checkbox:nth-child(even){padding-left: 40px}
+h3.title-form{font-size: 14px; margin-bottom: 36px}
+.custom-control-label::before,
+.custom-control-label::after {top: -1px}
 form .group-button{display: flex; justify-content: space-between; margin-top: 70px}
 form .group-button button{width: 48%}
 button{height: 45px}
 .wrap-form-group .form-row{margin-bottom: 20px}
+main .wrap-form-group .form-row.row-name{margin-bottom: 0}
 /*body*/
 body textarea{min-height: 126px}
 body input,body select,body textarea{display: block;width: 100%;line-height: 1;padding: 7.5px 15px;height: 35px!important;border: 1px solid #E3E3E3;border-radius: 3px;box-sizing: border-box; }
@@ -114,7 +117,7 @@ main#wrap-main .tab-control{width: 274px;position: fixed;height: 100vh;left: 0;t
 main#wrap-main .tab-control .logo-web{border-right: 1px solid var(--color-border);padding:var(--padding-item-control);display: flex;align-items: center;justify-content: space-between;}
 main#wrap-main .item-control a{transition: .3s; display: flex;padding: 18px 23px;border-top: 1px solid var(--color-border)}
 main#wrap-main .item-control .text-name{display: flex;align-items: center;}
-main#wrap-main .item-control .text-name h3{font-size: 16px;color: #7b7b7b;margin-left: 17px}
+main#wrap-main .item-control .text-name h3{font-size: 16px;color: #7b7b7b;margin-left: 17px;font-family:Roboto-Regular;}
 main#wrap-main #tab-controls .icon-bar{cursor: pointer;}
 main#wrap-main #tab-controls.active .icon-bar{padding:13px 10px;}
 main#wrap-main #tab-controls.active{width: auto;-webkit-transform: translate(0, 0);
