@@ -26,7 +26,7 @@ $(document).ready(function(){
 		 	$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': marginWrap + "px" });
 		 }
 		$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
-		if(widthDevice < 768){
+		if(widthDevice <= 768){
 			$(".wrapper").css({ 'padding-left': '15px','padding-right': '15px' });
 		}
 	function showMenu(){
