@@ -46,18 +46,32 @@ img{object-fit: cover}
 /*default class*/
 body{background: var(--color-gray)}
 body button{background: var(--color-main-green)}
-body .set-layout{margin-bottom: 30px;padding:27px 30px;background: #fff;border-radius: 5px;position: relative;}
-body .select-form{position: relative;width: 100%}
-body .select-form select{-webkit-appearance: none;color: #666666;-moz-appearance: none;background-image: url("../images/arrow-down.png");background-repeat: no-repeat;background-position-x: 97.5%;background-position-y:12px;}
+body .set-layout{margin-bottom: 30px;padding:40px 30px;background: #fff;border-radius: 5px;position: relative;}
+
 .padding-2{padding:0 30px;}
 .padding-top{padding-top: 20px}
+/*body*/
+body textarea{min-height: 126px}
+body input[type="checkbox"]{width: 15px;margin-right: 15px;}
+body button{color: #fff;transition:.2s;border:1px solid var(--color-main-green);border-radius: 3px; height: 35px;}
+body main#wrap-main .form-group-item{margin-bottom: 20px}
+body main#wrap-main .wrapper-form{width: 900px;margin:0 auto;max-width: 100%;padding-top:9px;}
 /*login*/
+main#wrap-main .wrap-form-login .control-button{margin-bottom: 0}
+main#wrap-main .wrap-form-login .control-button button {margin-top: 15px;height: 45px;width:285px;}
 /*form*/
-input,button,button:focus,select,textarea{outline: none;outline-style: none;border: 0px;margin:0;box-shadow:none!important;}
+input,button,button:focus,select,textarea{outline: none;outline-style: none;border: 0px;margin:0;box-shadow:none!important; height: 35px}
+button.btn{font-size: 14px; height: 45px}
 button.bg-gray{background-color: #EDEDED}
 button.bg-gray:hover{background-color: #b3a8a8}
-button.bg-blue{background-color: #3C79F3; color: white}
-button:hover{background-color: #406cc3; color: white}
+button.bg-gray:hover a{color: white}
+button.bg-blue{background-color: #3C79F3; color: white !important;}
+button:hover{background-color: #406cc3; color: white !important;}
+button.bg-transparent{background-color: transparent; border: 1px solid var(--color-main-green); color: var(--color-main-green)}
+button.bg-transparent a{color: var(--color-main-green)}
+button.bg-transparent:hover a{color: white}
+button.bg-transparent:hover{background-color: var(--color-main-green) !important; color: white}
+button.btn.big{width: 360px}
 form .form-group,
 .wrapper-details .row,
 form .form-row{margin-bottom: 20px}
@@ -66,7 +80,7 @@ form .form-row.text-area{align-items: end}
 form .form-row.checkbox-group .custom-control{padding-left: 30px}
 form .form-row.checkbox-group .custom-checkbox{margin-bottom: 20px}
 form .form-row.checkbox-group .custom-checkbox:nth-child(even){padding-left: 40px}
-h3.title-form{color: #000}
+h3.title-form{color: #000; margin-bottom: 30px}
 .custom-control-label::before,
 .custom-control-label::after {top: -1px}
 form .group-button{display: flex; justify-content: space-between; margin-top: 70px}
@@ -77,14 +91,9 @@ button.button-index{height: 35px}
 main .row.row-name{margin-bottom: 5px}
 input[type="password"]{font-family: auto}
 .page-index label{margin-bottom: 18px}
-/*body*/
-body textarea{min-height: 126px}
-body input,body select,body textarea{display: block;width: 100%;line-height: 1;padding: 7.5px 15px;height: 35px!important;border: 1px solid #E3E3E3!important;border-radius: 3px;box-sizing: border-box; }
-body input[type="checkbox"]{width: 15px;margin-right: 15px;}
-body button{color: #fff;transition:.2s;border:1px solid var(--color-main-green);border-radius: 3px}
-body main#wrap-main .form-group-item{margin-bottom: 20px}
-body main#wrap-main .wrapper-form{width: 900px;margin:0 auto;max-width: 100%;padding-top:9px;}
-body main#wrap-main .wrapper-form [class*=col]{display: flex;align-items: center;}
+button.new-brand{margin: 0 auto 30px}
+select{-webkit-appearance: none;color: #666666;-moz-appearance: none;background-image: url("../images/arrow-down.png");background-repeat: no-repeat;background-position-x: 97.5%;background-position-y:12px;}
+input.datetime-icon{background-image: url("../images/clock.png"); background-repeat: no-repeat; background-position-x: 98%; background-position-y: center}
 /*header*/
 header#header,body footer#footer{background: var(--color-main)}
 header#header{padding:10px 0;position: relative;}
@@ -99,19 +108,18 @@ footer#footer p{font-size: 16px;line-height: 19px;padding: 15px 0;text-align: ce
 main#wrap-main{margin-top: -60px;display: flex;}
 main#wrap-main>.wrapper-login{padding-top:76px;}
 main#wrap-main .wrap-form-login{width: 480px;max-width: 100%;margin:0 auto;background: var(--color-main);border-radius: 10px;padding:47px 42px;}
-main#wrap-main .wrap-form-login h2{font-family:var(--font-rugular); font-size: 25px;margin-bottom: 30px;text-transform: uppercase;text-align: center;padding: 26px 0}
+main#wrap-main .wrap-form-login h2{font-family:var(--font-rugular); font-size: 25px;text-transform: uppercase;text-align: center;padding: 26px 0;color:#000}
 main#wrap-main .wrap-form-login label{font-size: 16px;margin-bottom: 15px}
 main#wrap-main .wrap-form-login input{background: #f7f7f7;padding:14px 10px;margin-bottom: 0px}
 main#wrap-main .wrap-form-login .control-button{text-align: center;}
-main#wrap-main .wrap-form-login .control-button button{width:285px;margin-top: 37px}
 /*footer*/
 footer#footer{margin-top: 20px}
 footer#footer.position{position: absolute;bottom: 0;width: 100%;z-index: 1}
 footer#footer p{font-size: 16px;line-height: 19px;padding: 15px 0;text-align: center}
 /*index*/
 /*index*/
-header#header>.container>.logo-web{height: 40px} 
-.displayNone{display: none} 
+header#header>.container>.logo-web{height: 40px}
+.displayNone{display: none}
 .wrapper{width: 100%;padding-top: 90px}
 main#wrap-main .wrapper .wrap-form{padding:0px 15% 0 90px;}
 .showMenu{position: absolute;z-index: 11;cursor: pointer; left: 35px;display: none;height: 60px;align-items: center;top: 0;}
@@ -119,29 +127,18 @@ main#wrap-main .wrapper .wrap-form{padding:0px 15% 0 90px;}
 
 
 /*tab-control*/
-main#wrap-main .tab-control{width: 274px;position: fixed;height: 100vh;left: 0;top: 0;z-index: 10; background: #fff;transition: transform .3s ease-in-out,width .3s ease-in-out;}
-main#wrap-main .tab-control .logo-web{border-right: 1px solid var(--color-border);padding:10.5px 17px;display: flex;align-items: center;justify-content: space-between;}
-main#wrap-main .tab-control .logo-web a img{margin-right: 20px}
-main#wrap-main .item-control a{transition: .3s; display: flex;padding: 18px 23px;border-top: 1px solid var(--color-border)}
-main#wrap-main .item-control .text-name{display: flex;align-items: center;}
-main#wrap-main .item-control .text-name h3{font-size: 16px;color: #7b7b7b;margin-left: 17px;font-family:var(--font-rugular);}
-main#wrap-main .item-control .text-name h3:hover{color: var(--color-main-green); transition: all .3s}
-main#wrap-main #tab-controls .icon-bar{cursor: pointer;}
-main#wrap-main .control-index button{width: 100%}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nav.tab-control{width: 274px;position: fixed;height: 100vh;left: 0;top: 0;z-index: 10; background: #fff;transition: transform .3s ease-in-out,width .3s ease-in-out;}
+nav.tab-control ul li:first-child{border-right: 1px solid var(--color-border)}
+nav.tab-control ul li{border-bottom: 1px solid var(--color-border)}
+nav.tab-control ul li:last-child{border-bottom: none}
+nav.tab-control ul li a{padding: 10px 20px; }
+nav.tab-control ul li.item-sidebar a svg{margin-right: 15px}
+nav.tab-control ul li.item-sidebar.active a{background-color: var(--color-main-green); color: white}
+nav.tab-control ul li.item-sidebar.active a svg path{fill: white}
+nav.tab-control ul li.item-sidebar a{padding: 20px 25px }
+nav.tab-control img.icon-bar{margin: 20px;cursor: pointer;}
+nav.tab-control ul li.item-sidebar a:hover{background-color: var(--color-main-green); color: white}
+nav.tab-control ul li.item-sidebar a:hover svg path{fill: white}
 
 /*layout-search*/
 main#wrap-main .layout-search h2{color: #000000;margin: 27px 0;}
@@ -209,10 +206,6 @@ main#wrap-main .icon-datePicker i{font-size: 18px}
 main.page-index .form-row {margin-right: -15px;margin-left: -15px;}
 main.page-index .form-group{margin-bottom: 20px}
 main.page-index .form-row>[class*=col-] {padding-right: 15px;padding-left: 15px;}
-main#wrap-main .form-control {margin:0;height: auto;line-height: 1;font-size: 14px;border:none;}
-main#wrap-main input.form-control,main#wrap-main select.form-control{border:1px solid #E3E3E3}
-
-
 
 
 
