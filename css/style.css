@@ -127,6 +127,7 @@ main#wrap-main .wrapper .wrap-form{padding:0px 15% 0 90px;}
 
 /*tab-control*/
 nav.tab-control{width: 274px;position: fixed;height: 100vh;left: 0;top: 0;z-index: 10; background: #fff;transition: transform .3s ease-in-out,width .3s ease-in-out;}
+nav.tab-control ul li:first-child{border-right: 1px solid var(--color-border)}
 nav.tab-control ul li{border-bottom: 1px solid var(--color-border)}
 nav.tab-control ul li:last-child{border-bottom: none}
 nav.tab-control ul li a{padding: 10px 20px; }
@@ -134,7 +135,7 @@ nav.tab-control ul li.item-sidebar a svg{margin-right: 15px}
 nav.tab-control ul li.item-sidebar.active a{background-color: var(--color-main-green); color: white}
 nav.tab-control ul li.item-sidebar.active a svg path{fill: white}
 nav.tab-control ul li.item-sidebar a{padding: 20px 25px }
-nav.tab-control img.icon-bar{margin: 20px}
+nav.tab-control img.icon-bar{margin: 20px;cursor: pointer;}
 nav.tab-control ul li.item-sidebar a:hover{background-color: var(--color-main-green); color: white}
 nav.tab-control ul li.item-sidebar a:hover svg path{fill: white}
 
