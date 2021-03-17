@@ -3,9 +3,6 @@
 @media (min-width: 992px){.wrap-page-new {max-width: 960px;}}
 @media (min-width: 1200px){.wrap-page-new {max-width: 1140px;}}
 @media (min-width: 1360px){.wrap-page-new {max-width: 1200px;}}
-
-
-
 /*responsive*/
 
 @media (max-width: 1366px) {
@@ -49,7 +46,6 @@
     button{width:100%!important;}
     main#wrap-main.page-index .list-product{padding-left: 20px;padding-right: 20px}
     button.btn {font-size: 14px;height: 40px;line-height: 1;}
-    /*button.new-brand{margin-left: 15px;margin-right: 15px}*/
     .page-index label {margin-bottom: 10px;}
     main.page-index .form-row {margin-bottom: 0}
     main.page-index .control-index .form-group{margin-bottom: 0}

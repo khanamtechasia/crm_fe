@@ -42,7 +42,6 @@ h1{font-size: inherit;}
 img{object-fit: cover}
 /*fonts*/
 /*default properties*/
-
 /*default class*/
 body{background: var(--color-gray)}
 body button{background: var(--color-main-green)}
