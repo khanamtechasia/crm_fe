@@ -48,9 +48,17 @@
     /*index*/
     body{font-size: 13px}
     .page-index label {margin-bottom: 10px;}
-    main.page-index .form-group{margin-bottom: 0px}
-   
+    main.page-index .form-row {margin-bottom: 0}
+    main.page-index .control-index .form-group{margin-bottom: 0}
+   main#wrap-main .control-index button {margin-bottom: 15px}
+   main#wrap-main .list-product #customers {margin-top: 15px}
+   main#wrap-main .tab-control {left: -100%}
+   .showMenu {display:flex; }
+   .displayNone {display: block;height: 34px}
+header#header{padding:8px 0;}
+header#header>.container>.logo-web {text-align: center;height: 34px}
 }
-@media (max-width: 768px) {
-    .wrapper{padding-left: 15px;padding-right: 15px}
+@media (max-width: 576px) {
+    main#wrap-main .wrapper .wrap-form {padding: 0;}
+    .showMenu {left: 15px}
 }
