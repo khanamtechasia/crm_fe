@@ -22,14 +22,20 @@ $(document).ready(function(){
 	});
 	// 
 	let marginWrap = tabControl + 90;
-	 if(widthDevice > 1800){
-	 	$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': marginWrap + "px" });
-	 }
-	$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
+		if(widthDevice > 1800){
+		 	$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': marginWrap + "px" });
+		 }
+		$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
+		if(widthDevice < 768){
+			$(".wrapper").css({ 'padding-left': '15px','padding-right': '15px' });
+		}
 	function showMenu(){
 		let widthDevice = $(window).outerWidth();
 		if(widthDevice > 768){
 			$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
+			$('#tab-controls').css({'left': '0%', 'transition': 'all .5s'});
+			$('.showMenu').css({ 'display': 'none', 'transition': 'all .5s'});
+		} else{
 			$('#tab-controls').css({'left': '0%', 'transition': 'all .5s'});
 			$('.showMenu').css({ 'display': 'none', 'transition': 'all .5s'});
 		}
@@ -41,6 +47,9 @@ $(document).ready(function(){
 			$(".wrapper").css({ 'padding-left': '0px', 'transition': "all 0.5s" });
 			$('#tab-controls').css({'left': '-100%', 'transition': 'all .5s'});
 			$('.showMenu').css({ 'display': 'flex', 'transition': 'all .5s'});
+		}else{
+			$('#tab-controls').css({'left': '-100%', 'transition': 'all .5s'});
+			$('.showMenu').css({ 'display': 'flex', 'transition': 'all .5s'});
 		}
 	}
 
@@ -50,5 +59,7 @@ $(document).ready(function(){
 	$(".showMenu").click(function(){
 		showMenu()
 	})
+
+
 	
  })
