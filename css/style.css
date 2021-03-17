@@ -72,7 +72,7 @@ h3.title-form{color: #000}
 form .group-button{display: flex; justify-content: space-between; margin-top: 70px}
 form .group-button button{width: 48%}
 button{height: 45px}
-button.button-index{height: 35px;margin-top: 18px}
+button.button-index{height: 35px}
 .wrap-form-group .form-row{margin-bottom: 20px}
 main .row.row-name{margin-bottom: 5px}
 input[type="password"]{font-family: auto}
@@ -110,35 +110,45 @@ footer#footer.position{position: absolute;bottom: 0;width: 100%;z-index: 1}
 footer#footer p{font-size: 16px;line-height: 19px;padding: 15px 0;text-align: center}
 /*index*/
 /*index*/
-.wrapper{
-	max-width: 1200px;margin:0 auto;padding-bottom: 105px;width:100%;padding-top: 90px;
-	/*margin-right: c*/
-}
-
 header#header>.container>.logo-web{height: 40px} 
-header#header>.container>.logo-web img{display: none} 
+.displayNone{display: none} 
+.wrapper{width: 100%;padding-top: 90px}
+main#wrap-main .wrapper .wrap-form{padding:0px 15% 0 90px;}
+.showMenu{position: absolute;z-index: 11;cursor: pointer; left: 35px;display: none;height: 60px;align-items: center;top: 0;}
+.showMenu img{transform: rotate(180deg);}
+
+
 /*tab-control*/
-main#wrap-main .tab-control{width: 274px;position: relative;height: 100vh;left: 0;top: 0;z-index: 10; background: #fff;transition: transform .3s ease-in-out,width .3s ease-in-out;}
+main#wrap-main .tab-control{width: 274px;position: fixed;height: 100vh;left: 0;top: 0;z-index: 10; background: #fff;transition: transform .3s ease-in-out,width .3s ease-in-out;}
 main#wrap-main .tab-control .logo-web{border-right: 1px solid var(--color-border);padding:10.5px 17px;display: flex;align-items: center;justify-content: space-between;}
 main#wrap-main .tab-control .logo-web a img{margin-right: 20px}
 main#wrap-main .item-control a{transition: .3s; display: flex;padding: 18px 23px;border-top: 1px solid var(--color-border)}
 main#wrap-main .item-control .text-name{display: flex;align-items: center;}
 main#wrap-main .item-control .text-name h3{font-size: 16px;color: #7b7b7b;margin-left: 17px;font-family:var(--font-rugular);}
+main#wrap-main .item-control .text-name h3:hover{color: var(--color-main-green); transition: all .3s}
 main#wrap-main #tab-controls .icon-bar{cursor: pointer;}
-main#wrap-main #tab-controls.active .logo-web{height: 60px}
-main#wrap-main #tab-controls.active .icon-bar{padding:13px 10px;}
-main#wrap-main #tab-controls.active{width: auto;-webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);}
 main#wrap-main .control-index button{width: 100%}
-main#wrap-main #tab-controls.active .logo-web>a{display: none; visibility: hidden;opacity: 0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*layout-search*/
 main#wrap-main .layout-search h2{color: #000000;margin: 27px 0;}
 main#wrap-main .layout-search .form-controll{display: grid;grid-gap: 30px}
 main#wrap-main .layout-search .form-controll-item{margin-bottom: 18px}
 main#wrap-main .layout-search .form-controll-item label{margin-bottom: 18px;color:#6A6A6A;}
-main#wrap-main .layout-search .control-button{grid-template-columns: 1fr 1fr 1fr;margin-bottom: 12px}
+main#wrap-main .layout-search .control-button{grid-template-columns: 1fr 1fr 1fr;margin-bottom: 0px}
 main#wrap-main .layout-search .control-button button{padding:9px 0;}
 main#wrap-main .list-product{padding:30px 0 0;}
 main#wrap-main .list-product .form-controll{display: grid; padding:0 27px;grid-template-columns: 1fr 1fr 1fr;grid-gap: 30px}
@@ -165,6 +175,7 @@ main#wrap-main .pagilation ul li a.active{font-size: 16px;background: var(--colo
 
 /*page new*/
 main#wrap-main .list-product .form-group h2{padding-left: 27px;color:#000;}
+.wrap-page-new{max-width: 1200px;width: 100%; margin:0 auto;}
 main#wrap-main .wrap-page-new .form-control h3{color: #000;font-family: var(--font-bold);margin:7.5px 0;}
 main#wrap-main .checkBox-form .form-group[class*=col]{display: block;}main#wrap-main .control-submit{display: grid;grid-template-columns: 1fr 1fr;grid-gap: 45px;/*margin-bottom: 50px;*/margin-top: 54px}
 main#wrap-main .control-submit button{width: 100%}
@@ -196,6 +207,7 @@ main#wrap-main .icon-datePicker i{font-size: 18px}
 .daterangepicker .calendar-time {display: flex;width: 100px}
 .daterangepicker select.hourselect{height: 35px}
 main.page-index .form-row {margin-right: -15px;margin-left: -15px;}
+main.page-index .form-group{margin-bottom: 20px}
 main.page-index .form-row>[class*=col-] {padding-right: 15px;padding-left: 15px;}
 main#wrap-main .form-control {margin:0;height: auto;line-height: 1;font-size: 14px;border:none;}
 main#wrap-main input.form-control,main#wrap-main select.form-control{border:1px solid #E3E3E3}
