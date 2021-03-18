@@ -7,7 +7,7 @@
 
 @media (max-width: 1366px) {
     main#wrap-main .wrapper .wrap-form{padding-left: 80px}
-    .tab-control{width: 250px}
+    nav.tab-control{width: 250px}
 }
 @media (max-width: 1280px) {
     .wrapper {max-width: 100%}
@@ -37,7 +37,12 @@
     body .select-form select {background-position-x: 96.5%;background-size: 14px;}
     main#wrap-main #tab-controls.active .logo-web {height: 50px;}
     main#wrap-main .wrapper .wrap-form {padding: 0 30px;}
-    .showMenu {;left: 25px}
+    .showMenu {;left: 25px;height: 56px}
+    nav.tab-control {width: 230px;}
+    header#header {padding: 8px 0;}
+    nav.tab-control ul li a {padding-left: 15px}
+    nav.tab-control ul li:first-child a>img{height: 35px}
+    nav.tab-control ul li.item-sidebar a {padding: 15px 15px 15px 18px;}
     main#wrap-main p.name-details>a {white-space: nowrap;overflow: hidden; width: 100%;text-overflow: ellipsis;display: inline-block;}
 }
 @media (max-width: 768px) {
@@ -60,7 +65,7 @@
     .details-history label {margin-bottom: 10px;font-family: var(--font-bold);color: #000}
     main#wrap-main .name-details-history {margin-bottom: 20px}
     main#wrap-main .list-product #customers tr td>a {width: 80px;padding: 6px 15px;}
-    main#wrap-main .list-product #customers td, main#wrap-main .list-product #customers th {width: calc((100% - 80px) / 2);padding: 7.5px 15px;}
+    main#wrap-main .list-product #customers td, main#wrap-main .list-product #customers th {width: calc((100% - 80px) / 2);padding: 7.5px 8px;}
     main .row.row-name { margin-bottom: 20px;}
     .wrapper-details .row label{font-family: var(--font-bold);color: #000}
     main#wrap-main .list-product .form-group a.button {margin:0 15px;}
@@ -71,6 +76,8 @@
     main#wrap-main .control-submit {grid-gap: 15px}
     main#wrap-main .pagilation ul li a {width: 30px;height: 30px;margin: 0 5px;font-size: 11px}
     main#wrap-main .control-submit.control-detail-page-delete {grid-template-columns: 1fr;grid-gap: 0}
+    main#wrap-main .edit-Page>a {width: 80px}
+    main#wrap-main .back-page a{padding:10.5px 0;}
     #header.fixed-menu{position: fixed;top: 0;left: 0;width: 100%;z-index: 1;border-bottom: 1px solid var(--color-border)}
 }
 @media (max-width: 576px) {
