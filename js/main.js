@@ -75,5 +75,8 @@ $(document).ready(function(){
 	if(widthDevice < 768){
 		scrollMenu();
 	}
+	// FOOTER
+	let d = new Date();
+	document.getElementById('fecthYear').innerHTML = d.getFullYear();
 	
  })
