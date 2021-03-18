@@ -60,6 +60,20 @@ $(document).ready(function(){
 		showMenu()
 	})
 
-
+	// scroll
+	function scrollMenu(){
+		var offset = 1;
+		var back_to_top = document.getElementById('header');
+		window.addEventListener('scroll', function() {
+		    if (pageYOffset > offset) {
+		        back_to_top.classList.add('fixed-menu');
+		    } else {
+		        back_to_top.classList.remove('fixed-menu');
+		    };
+		});
+	}
+	if(widthDevice < 768){
+		scrollMenu();
+	}
 	
  })

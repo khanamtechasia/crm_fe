@@ -67,9 +67,11 @@
     main#wrap-main .list-product .form-group h2 {text-align: center;padding-left: 0;margin-bottom: 20px}
     main#wrap-main .list-product { padding: 20px 0 0;}
     form .form-row.checkbox-group .custom-checkbox {margin-bottom: 10px;padding-left: 30px!important}
-    form .group-button {margin:30px 0;}
+    form .group-button {margin:30px 0;display: grid; grid-template-columns: 1fr 1fr;grid-gap: 15px;}
+    main#wrap-main .control-submit {grid-gap: 15px}
     main#wrap-main .pagilation ul li a {width: 30px;height: 30px;margin: 0 5px;font-size: 11px}
     main#wrap-main .control-submit.control-detail-page-delete {grid-template-columns: 1fr;grid-gap: 0}
+    #header.fixed-menu{position: fixed;top: 0;left: 0;width: 100%;z-index: 1;border-bottom: 1px solid var(--color-border)}
 }
 @media (max-width: 576px) {
     main#wrap-main .wrapper .wrap-form {padding: 0;}
