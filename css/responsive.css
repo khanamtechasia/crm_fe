@@ -50,7 +50,6 @@
     main#wrap-main p.name-details>a {white-space: nowrap;overflow: hidden; width: 100%;text-overflow: ellipsis;display: inline-block;}
 }
 @media all and (max-width: 768px) {
-    main#wrap-main .list-product .responsive-table table {width: 200%!important}
     /*index*/
     body{font-size: 13px}
     /*button{width:100%!important;}*/
@@ -91,4 +90,5 @@
     main#wrap-main .wrapper .wrap-form {padding: 0;}
     .showMenu {left: 15px}
     footer#footer p {font-size: 13px;}
+    main#wrap-main .list-product .responsive-table table {width: 200%!important}
 }
