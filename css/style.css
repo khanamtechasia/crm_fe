@@ -70,7 +70,7 @@ button.bg-transparent{background-color: transparent; border: 1px solid var(--col
 button.bg-transparent a{color: var(--color-main-green)}
 button.bg-transparent:hover a{color: white}
 button.bg-transparent:hover{background-color: var(--color-main-green) !important; color: white}
-button.btn.big{width: 360px}
+button.btn.big{max-width: 360px;width: 100%}
 form .form-group,
 .wrapper-details .row,
 form .form-row{margin-bottom: 20px}
