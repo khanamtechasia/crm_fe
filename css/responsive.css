@@ -46,6 +46,8 @@
     nav.tab-control ul li a {padding-left: 15px}
     nav.tab-control ul li:first-child a>img{height: 35px}
     nav.tab-control ul li.item-sidebar a {padding: 15px 15px 15px 18px;}
+    .responsive-table{overflow-x: scroll;}
+    main#wrap-main .list-product .responsive-table table#customers {width: 200%}
     main#wrap-main p.name-details>a {white-space: nowrap;overflow: hidden; width: 100%;text-overflow: ellipsis;display: inline-block;}
 }
 @media all and (max-width: 768px) {
@@ -69,7 +71,7 @@
     main#wrap-main .name-details-history {margin-bottom: 20px}
     main#wrap-main .list-product #customers tr td>a {width: 80px;padding: 6px 15px;}
     main#wrap-main .list-product #customers td, main#wrap-main .list-product #customers th {width: calc((100% - 80px) / 2);padding: 7.5px 8px;}
-    main .row.row-name { margin-bottom: 20px;}
+    main .row.row-name { margin-bottom: 20px;margin-top: 40px}
     .wrapper-details .row label{font-family: var(--font-bold);color: #000}
     main#wrap-main .list-product .form-group a.button {margin:0 15px;}
     main#wrap-main .list-product .form-group h2 {text-align: center;padding-left: 0;margin-bottom: 20px}
