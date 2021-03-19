@@ -47,15 +47,16 @@
     nav.tab-control ul li:first-child a>img{height: 35px}
     nav.tab-control ul li.item-sidebar a {padding: 15px 15px 15px 18px;}
     .responsive-table{overflow-x: scroll;}
-    main#wrap-main .list-product .responsive-table table#customers {width: 200%}
     main#wrap-main p.name-details>a {white-space: nowrap;overflow: hidden; width: 100%;text-overflow: ellipsis;display: inline-block;}
 }
 @media all and (max-width: 768px) {
+    main#wrap-main .list-product .responsive-table table {width: 200%}
     /*index*/
     body{font-size: 13px}
-    button{width:100%!important;}
+    /*button{width:100%!important;}*/
     main#wrap-main.page-index .list-product{padding-left: 20px;padding-right: 20px}
     button.btn {font-size: 14px;height: 40px;line-height: 1;}
+    .group-button button.btn{width: 100%}
     .page-index label {margin-bottom: 10px;}
     main.page-index .form-row {margin-bottom: 0}
     main.page-index .control-index .form-group{margin-bottom: 0}
@@ -70,11 +71,11 @@
     .details-history label {margin-bottom: 10px;font-family: var(--font-bold);color: #000}
     main#wrap-main .name-details-history {margin-bottom: 20px}
     main#wrap-main .list-product #customers tr td>a {width: 80px;padding: 6px 15px;}
-    main#wrap-main .list-product #customers td, main#wrap-main .list-product #customers th {width: calc((100% - 80px) / 2);padding: 7.5px 8px;}
+    main#wrap-main .list-product #customers td, main#wrap-main .list-product #customers th {width: calc((100% - 80px) / 2);padding: 7.5px 15px;}
     main .row.row-name { margin-bottom: 20px;margin-top: 40px}
     .wrapper-details .row label{font-family: var(--font-bold);color: #000}
     main#wrap-main .list-product .form-group a.button {margin:0 15px;}
-    main#wrap-main .list-product .form-group h2 {text-align: center;padding-left: 0;margin-bottom: 20px}
+    main#wrap-main .list-product .form-group h2 {padding-left: 15px;margin-bottom: 20px}
     main#wrap-main .list-product { padding: 20px 0 0;}
     form .form-row.checkbox-group .custom-checkbox {margin-bottom: 10px;padding-left: 30px!important}
     form .group-button {margin:30px 0;display: grid; grid-template-columns: 1fr 1fr;grid-gap: 15px;}
