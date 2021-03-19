@@ -181,7 +181,7 @@ main#wrap-main .checkBox-form .col-md-6:nth-child(even){padding-left: 25px}
 /*page-details*/
 main#wrap-main p.name-details{font-family: var(--font-bold);color: #6a6a6a}
 main#wrap-main p.name-details>a{color: #0368FF;text-decoration: revert;}
-main#wrap-main .edit-Page{position: absolute;top:27px;right:30px;}
+main#wrap-main .edit-Page{position: absolute;top:40px;right:30px;}
 main#wrap-main .edit-Page>a{color: var(--color-main-green);border:1px solid var(--color-main-green);width: 120px;transition: .3s;display: inline-block;padding: 8px 0;text-align: center;border-radius: 3px;}
 main#wrap-main .edit-Page>a:hover{background:var(--color-main-green);color:#fff; }
 main#wrap-main label[for*="inlineCheckbo_"]{margin-bottom: 20px}
