@@ -91,7 +91,7 @@ main .row.row-name{margin-bottom: 5px}
 input[type="password"]{font-family: auto}
 .page-index label{margin-bottom: 18px}
 button.new-brand{margin: 0 auto 30px}
-select{-webkit-appearance: none;color: #666666;-moz-appearance: none;background-image: url("../images/arrow-down.png");background-repeat: no-repeat;background-position-x: 97.5%;background-position-y:12px;}
+select{-webkit-appearance: none;color: #666666;-moz-appearance: none;background-image: url("../images/arrow-down.png");background-repeat: no-repeat;background-position-x: 97.5%;background-position-y:12px; padding-right: 30px}
 input.datetime-icon{background-image: url("../images/clock.png"); background-repeat: no-repeat; background-position-x: 98%; background-position-y: center}
 /*header*/
 header#header,body footer#footer{background: var(--color-main)}
