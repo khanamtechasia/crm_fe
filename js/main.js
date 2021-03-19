@@ -49,16 +49,20 @@ $(document).ready(function(){
 	})
 	$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
 	function responsive(){
+		let tabControl = $('#tab-controls').outerWidth();
 		let marginWrap = tabControl + 90;
 		let widthDevice = $(document).width();
 		if(widthDevice > 1800){
 		 	$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': marginWrap + "px" });
+		}else {
+			$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': '15%' });
 		}
 		if (widthDevice < 1280) {
 			$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': '60px' });
 		} ;
 		if(widthDevice <= 992){
 			$('#tab-controls').css({ 'width': '230px'});
+			$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
 		};
 		if(widthDevice > 768){
 			$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
