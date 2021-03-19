@@ -71,10 +71,10 @@ button.bg-transparent a{color: var(--color-main-green)}
 button.bg-transparent:hover a{color: white}
 button.bg-transparent:hover{background-color: var(--color-main-green) !important; color: white}
 button.btn.big{max-width: 360px;width: 100%}
+main .row.row-name{margin-bottom: 5px}
 form .form-group,
-.wrapper-details .row,
-form .form-row{margin-bottom: 20px}
-form .form-row .form-group{margin-bottom: 0px}
+.wrapper-details .row,main .wrapper-details .row.row-name,
+form .form-row .form-group{margin-bottom: 20px}
 form .form-row.text-area{align-items: end}
 form .form-row.checkbox-group .custom-control{padding-left: 30px}
 form .form-row.checkbox-group .custom-checkbox{margin-bottom: 20px}
@@ -87,7 +87,6 @@ form .group-button button{width: 48%}
 button{height: 45px}
 button.button-index{height: 35px}
 .wrap-form-group .form-row{margin-bottom: 20px}
-main .row.row-name{margin-bottom: 5px}
 input[type="password"]{font-family: auto}
 .page-index label{margin-bottom: 18px}
 button.new-brand{margin: 0 auto 30px}
