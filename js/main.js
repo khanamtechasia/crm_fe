@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	let widthDevice = $(window).outerWidth();
+	let widthDevice = $(document).outerWidth();
 	let footer = document.getElementById('footer');
 	let tabControl = $('#tab-controls').outerWidth();	
 	// console.log();
 	function setFooter(){
-		let heightDevice = $(window).height();
+		let heightDevice = $(document).height();
 		let heightHeader= $('#header').outerHeight();
 		let heightBody= $('#wrap-main').outerHeight();
 		let heightFooter= $('#footer').outerHeight();
@@ -16,21 +16,9 @@ $(document).ready(function(){
 			$('footer').removeClass('position');
 		}
 	}
-	setFooter();
-	$(window).resize(function(){
-		setFooter();
-	});
 	// 
-	let marginWrap = tabControl + 90;
-		if(widthDevice > 1800){
-		 	$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': marginWrap + "px" });
-		 }
-		$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
-		if(widthDevice <= 768){
-			$(".wrapper").css({ 'padding-left': '15px','padding-right': '15px' });
-		}
 	function showMenu(){
-		let widthDevice = $(window).outerWidth();
+		let widthDevice = $(document).width();
 		if(widthDevice > 768){
 			$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
 			$('#tab-controls').css({'left': '0%', 'transition': 'all .5s'});
@@ -42,7 +30,7 @@ $(document).ready(function(){
 
 	}
 	function hideMenu(){
-		let widthDevice = $(window).outerWidth();
+		let widthDevice = $(document).width();
 		if (widthDevice >768) {
 			$(".wrapper").css({ 'padding-left': '0px', 'transition': "all 0.5s" });
 			$('#tab-controls').css({'left': '-100%', 'transition': 'all .5s'});
@@ -59,7 +47,28 @@ $(document).ready(function(){
 	$(".showMenu").click(function(){
 		showMenu()
 	})
-
+	$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
+	function responsive(){
+		let marginWrap = tabControl + 90;
+		let widthDevice = $(document).width();
+		if(widthDevice > 1800){
+		 	$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': marginWrap + "px" });
+		}
+		if (widthDevice < 1280) {
+			$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': '60px' });
+		} ;
+		if(widthDevice <= 992){
+			$('#tab-controls').css({ 'width': '230px'});
+		};
+		if(widthDevice > 768){
+			$(".wrapper").css({ 'padding-left': tabControl + 'px', 'transition': "all 0.5s" });
+			$('#tab-controls').css({'left': '0%', 'transition': 'all .5s'});
+		 }else {
+			$(".wrapper").css({ 'padding-left': '15px','padding-right': '15px' });
+			$('#tab-controls').css({'left': '-100%', 'transition': 'all .5s'});
+			$('main#wrap-main .wrapper .wrap-form').css({ 'padding-right': '15px' });
+		}
+	}
 	// scroll
 	function scrollMenu(){
 		var offset = 1;
@@ -72,9 +81,15 @@ $(document).ready(function(){
 		    };
 		});
 	}
-	if(widthDevice < 768){
-		scrollMenu();
-	}
+	setFooter();
+	responsive();
+	$(window).resize(function(){
+		setFooter();
+		responsive();
+		if(widthDevice < 768){
+			scrollMenu();
+		}
+	});
 	// FOOTER
 	let d = new Date();
 	document.getElementById('fecthYear').innerHTML = d.getFullYear();
